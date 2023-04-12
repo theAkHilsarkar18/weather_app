@@ -40,9 +40,9 @@ class _WeatherscreenState extends State<Weatherscreen> {
                     height: double.infinity,
                     width: double.infinity,
                     child: weatherData!.current.isDay == 1
-                        ? Image.network("${weatherproviderTrue.day}",
+                        ? Image.asset("assets/day/day.gif",
                             fit: BoxFit.cover)
-                        : Image.network("${weatherproviderTrue.nightBg}",
+                        : Image.asset("assets/day/night.gif",
                             fit: BoxFit
                                 .cover), //Image.asset("assets/night/cloudy.jpg", fit: BoxFit.cover),
                   ),
